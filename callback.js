@@ -17,7 +17,7 @@ const multiply = (a,b) => a * b;
 // 함수의 레퍼런스(참조값)가 전달 되는 것
 // add나 multiply 함수는 calculator 고차함수 내에서 필요할 때(나중에) 호출된다.
 function calculator (a,b, action) {
-    if(a< 0 || b < 0){
+    if(a < 0 || b < 0){
         return;
     }
     let result = action(a,b);

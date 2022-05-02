@@ -6,17 +6,30 @@
 // 5, 순회 숫자의 2배 값을 출력
 
 function iterate(maxNum, action) {
-    let result = action(maxNum);
-
-    for(let i = 0; i <= maxNum; i++) {
-        
+    for (let i = 0; i <= maxNum; i++){
+        console.log(action(i));
     }
-
-    return result;
 }
 
-const print = (maxNum) => maxNum;
-const printDouble = (maxNum) => maxNum*2;
+const print = (numLimit) => numLimit;
+const printDouble = (numLimit) => numLimit * 2;
+
+// const print2 = (number) => {
+//     for(let i = 0; i <= number; i++) {
+//         console.log(i);
+//     }
+// }
+
+// const printDouble2 = (number) => {
+//     for(let i = 0; i <= number; i++) {
+//         console.log(i * 2);
+//     }
+// }
 
 iterate(5, print);
-// iterate(5, printDouble);
+iterate(5, printDouble);
+
+//
+
+
+
