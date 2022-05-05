@@ -28,8 +28,3 @@ const printDouble = (numLimit) => numLimit * 2;
 
 iterate(5, print);
 iterate(5, printDouble);
-
-//
-
-
-
