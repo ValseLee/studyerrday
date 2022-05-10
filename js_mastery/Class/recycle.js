@@ -6,28 +6,28 @@
 // static 정적 프로퍼티, 메소드 학습
 // static 이 없으면 instance 에 포함되기 때문에 className.property로 접근 불가
 
-class Fruit{
-    static MAX_FRUITS = 4;
+class Fruit {
+  static MAX_FRUITS = 4;
 
-    constructor(name, color) {
-        this.name = name;
-        this.emoji = color;
-    };
+  constructor(name, color) {
+    this.name = name;
+    this.emoji = color;
+  }
 
-    // instance level method
-    display = () => {
-        console.log(`${this.name} is ${this.emoji}`);
-    }; 
+  // instance level method
+  display = () => {
+    console.log(`${this.name} is ${this.emoji}`);
+  };
 
-    // class level method
-    static makeRandomFruit() {
-        return new Fruit('banana', 'yellow');
-    }; 
-    
-    // 이 메소드를 통해 인스턴스를 리턴할 수 있다.
-    // static 메소드(class level)에서는 값이 채워져 있지 않다.
-    // 그래서 this 참조가 불가능하다. 왜? 내용이 아직 없잖아.
-};
+  // class level method
+  static makeRandomFruit() {
+    return new Fruit('banana', 'yellow');
+  }
+
+  // 이 메소드를 통해 인스턴스를 리턴할 수 있다.
+  // static 메소드(class level)에서는 값이 채워져 있지 않다.
+  // 그래서 this 참조가 불가능하다. 왜? 내용이 아직 없잖아.
+}
 
 const BANANA = Fruit.makeRandomFruit();
 console.log(BANANA);
@@ -39,4 +39,4 @@ APPLE.display();
 
 ///
 
-Math.pow();  // built-in object
+Math.pow(); // built-in object
